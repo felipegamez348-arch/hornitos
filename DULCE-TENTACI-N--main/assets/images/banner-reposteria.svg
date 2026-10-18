@@ -1,0 +1,51 @@
+﻿<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgRep" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8EFEA"/>
+      <stop offset="1" stop-color="#EFC9AA"/>
+    </linearGradient>
+    <linearGradient id="accentRep" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#D77F46"/>
+      <stop offset="1" stop-color="#A95F32"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bgRep)"/>
+  <circle cx="180" cy="120" r="180" fill="#F0C89D" opacity="0.55"/>
+  <circle cx="1040" cy="620" r="260" fill="#E7B079" opacity="0.28"/>
+
+  <g transform="translate(770 120)">
+    <g>
+      <path d="M24 240C24 170 82 116 152 116H206C276 116 334 170 334 240V262H24V240Z" fill="#E7A86B"/>
+      <path d="M78 124H280C299 124 314 139 314 158V178C314 191 304 202 291 202H67C54 202 44 191 44 178V158C44 139 59 124 78 124Z" fill="#F4D6AE"/>
+      <path d="M82 146H276" stroke="#B76439" stroke-width="6" stroke-linecap="round"/>
+      <path d="M112 90H242" stroke="#B76439" stroke-width="7" stroke-linecap="round"/>
+      <path d="M95 202V248" stroke="#B76439" stroke-width="8" stroke-linecap="round"/>
+      <path d="M255 202V248" stroke="#B76439" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="116" cy="58" r="22" fill="#F8E8C9"/>
+      <circle cx="208" cy="50" r="22" fill="#F8E8C9"/>
+      <circle cx="282" cy="66" r="22" fill="#F8E8C9"/>
+      <path d="M144 145V118" stroke="#B76439" stroke-width="7" stroke-linecap="round"/>
+      <path d="M188 145V118" stroke="#B76439" stroke-width="7" stroke-linecap="round"/>
+      <path d="M232 145V118" stroke="#B76439" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(100 165)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="82" font-weight="700" fill="#2C2018">TORTAS</text>
+    <text x="0" y="72" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="8" fill="#B76C3F">CUPCAKES • ESPECIALES</text>
+    <rect x="0" y="100" width="170" height="8" rx="4" fill="url(#accentRep)"/>
+    <text x="0" y="170" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#5C4331">Tortas decoradas y mini tortas para</text>
+    <text x="0" y="210" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#5C4331">cumpleaños, reuniones y celebraciones.</text>
+    <g transform="translate(0 250)">
+      <rect width="250" height="58" rx="29" fill="url(#accentRep)"/>
+      <text x="125" y="36" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">Ver tortas</text>
+    </g>
+  </g>
+
+  <g transform="translate(120 520)">
+    <circle cx="46" cy="30" r="24" fill="#F0CC92"/>
+    <circle cx="104" cy="30" r="24" fill="#E9A666"/>
+    <circle cx="162" cy="30" r="24" fill="#F6E3BE"/>
+    <path d="M18 58H190" stroke="#B76C3F" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

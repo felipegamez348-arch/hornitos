@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="Pan artesanal">
+  <defs>
+    <linearGradient id="bgPan" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8efe5"/>
+      <stop offset="100%" stop-color="#f0ddc0"/>
+    </linearGradient>
+    <linearGradient id="breadBody" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d8a76a"/>
+      <stop offset="100%" stop-color="#b57642"/>
+    </linearGradient>
+    <linearGradient id="breadGlow" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5d4a2"/>
+      <stop offset="100%" stop-color="#d59b5d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bgPan)"/>
+  <ellipse cx="400" cy="660" rx="235" ry="48" fill="#c7b39a" opacity="0.32"/>
+  <g transform="translate(0 30)">
+    <path d="M245 515 C245 400, 560 400, 560 515 L560 550 C560 618, 245 618, 245 550 Z" fill="url(#breadBody)"/>
+    <path d="M285 505 C305 430, 495 430, 515 505" fill="none" stroke="#f3d59f" stroke-width="18" stroke-linecap="round"/>
+    <path d="M270 470 C330 432, 470 432, 530 470" fill="none" stroke="#e7ba7b" stroke-width="12" stroke-linecap="round" opacity="0.7"/>
+    <path d="M250 560 C255 600, 540 600, 550 560" fill="none" stroke="#8d5d35" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+    <path d="M320 420 C342 385, 458 385, 480 420" fill="none" stroke="#f4cf8f" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+    <path d="M235 490 C210 490, 200 520, 215 545 C255 520 246 480 235 490 Z" fill="#d79e61" opacity="0.8"/>
+    <path d="M565 490 C590 490, 600 520, 585 545 C545 520, 554 480 565 490 Z" fill="#d79e61" opacity="0.8"/>
+    <path d="M300 520 L275 610" stroke="#834d29" stroke-width="12" stroke-linecap="round" opacity="0.45"/>
+    <path d="M500 520 L525 610" stroke="#834d29" stroke-width="12" stroke-linecap="round" opacity="0.45"/>
+    <path d="M355 520 L349 610" stroke="#834d29" stroke-width="9" stroke-linecap="round" opacity="0.35"/>
+    <path d="M445 520 L451 610" stroke="#834d29" stroke-width="9" stroke-linecap="round" opacity="0.35"/>
+    <path d="M276 500 C352 430, 448 430, 524 500" fill="url(#breadGlow)" opacity="0.7"/>
+  </g>
+</svg>

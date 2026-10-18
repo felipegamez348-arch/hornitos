@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8KT3TZK3Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K8KT3TZK3Q');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Artesanal | Dulce</title>
+    <meta name="description" content="Panadería artesanal horneada con pasión cada día: croissants, panes aliñados, roscones y panes de queso frescos.">
+    <link rel="icon" href="favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=20261013-1">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon" aria-label="Logo Dulce">
+                <img src="favicon.ico" alt="Logo Dulce Artesanal" class="preloader-logo">
+            </div>
+            <span class="preloader-text">P A N A D E R Í A</span>
+        </div>
+    </div>
+
+    <button type="button" id="cartTrigger" class="cart-trigger floating-cart" aria-label="Abrir carrito">
+        <i class="fas fa-shopping-cart"></i><span class="cart-badge" aria-live="polite">0</span>
+    </button>
+
+    <!-- FLOATING WHATSAPP -->
+    <!-- Floating social stack injected by main.js -->
+
+    <!-- NAVBAR (VELAR ESTATES STYLE) -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">DULCE</span>
+                <span class="logo-sub">ARTESANAL</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="dropdown">
+                    <a href="panaderia.html" class="nav-link dropdown-toggle" style="color: var(--gold);">Especialidades <i class="fas fa-chevron-down chevron-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="panaderia.html"><i class="fas fa-bread-slice"></i> Panadería</a></li>
+                        <li><a href="reposteria.html"><i class="fas fa-cake-candles"></i> Repostería</a></li>
+                        <li><a href="delicias.html"><i class="fas fa-cookie-bite"></i> Delicias del Horno</a></li>
+                        <li><a href="promociones.html"><i class="fas fa-tags"></i> Promociones</a></li>
+                        <li><a href="juego.html"><i class="fas fa-gamepad"></i> Diseña tu Torta</a></li>
+                    </ul>
+                </li>
+                <li><a href="equipo.html" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="admin.html" class="nav-link admin-nav-item" title="Panel de Administración"><i class="fas fa-user-shield"></i> Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section class="hero" style="min-height: 55vh; height: auto; justify-content: center; padding: 150px 0 70px; background-image: url('assets/images/banner-panaderia.svg');">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-velar-container" style="justify-content: center; text-align: center;">
+            <div data-aos="fade-up" style="max-width: 800px; margin: 0 auto;">
+                <span class="velar-lead-badge">✦ Masa Madre & Horno Tradicional</span>
+                <h1 class="velar-title" style="font-size: clamp(2.4rem, 5vw, 4rem); margin-bottom: 18px;">
+                    Panadería <br>
+                    <span class="gold-text">Fresca & Artesanal</span>
+                </h1>
+                <p style="font-size: 1.05rem; color: rgba(230, 230, 230, 0.85); line-height: 1.8; max-width: 650px; margin: 0 auto 25px;">
+                    El aroma inconfundible del pan recién horneado. Cada pieza es elaborada a mano con masa reposada y horneada al punto exacto de dorado.
+                </p>
+                <div style="display: flex; gap: 15px; justify-content: center;">
+                    <a href="#catalogo-pan" class="velar-btn-explore">Ver Variedades <i class="fas fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOG SECTION -->
+    <section id="catalogo-pan" class="section-dark">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">— Catálogo Exclusivo —</span>
+                <h2>Nuestros Panes de Autor</h2>
+                <div class="section-line"></div>
+                <p class="section-sub">Horneados cada mañana para deleitar tu paladar</p>
+            </div>
+
+            <!-- Velar Cards Grid with User's Real Photos -->
+            <div id="panaderia-grid" class="velar-cards-row" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px;">
+                
+                <!-- Croissant -->
+                <div class="velar-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="velar-card-img-wrap">
+                        <img src="assets/images/croissant.jpeg" alt="Croissant Clásico Francés">
+                        <span class="velar-card-badge">✦ POPULAR</span>
+                        <span class="velar-card-price">$2.000</span>
+                    </div>
+                    <div class="velar-card-body">
+                        <h3 class="velar-card-title">Croissant Francés de Mantequilla</h3>
+                        <p class="velar-card-sub">Hojaldre 72h con 100% mantequilla pura de campo.</p>
+                        <div class="velar-specs">
+                            <span><i class="fas fa-bread-slice"></i> Individual</span>
+                            <span><i class="fas fa-fire-alt"></i> Crujiente</span>
+                            <span><i class="fas fa-award"></i> Artesanal</span>
+                        </div>
+                        <div class="velar-card-footer">
+                            <span class="velar-status">DISPONIBLE HOY</span>
+                            <div class="velar-actions">
+                                <button class="velar-action-btn" title="Compartir" onclick="shareProduct('Croissant Francés')"><i class="fas fa-share-alt"></i></button>
+                                <button class="velar-action-btn velar-fav-btn" title="Favorito"><i class="far fa-heart"></i></button>
+                                <a href="index.html#contacto" class="velar-action-btn" title="Pedir"><i class="fas fa-shopping-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pan Aliñado -->
+                <div class="velar-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="velar-card-img-wrap">
+                        <img src="assets/images/pan-aliniado.jpeg" alt="Pan Aliñado Tradicional">
+                        <span class="velar-card-badge">✦ TRADICIONAL</span>
+                        <span class="velar-card-price">$2.000</span>
+                    </div>
+                    <div class="velar-card-body">
+                        <h3 class="velar-card-title">Pan Aliñado Tradicional</h3>
+                        <p class="velar-card-sub">Masa suave y esponjosa aromatizada con queso y especias.</p>
+                        <div class="velar-specs">
+                            <span><i class="fas fa-bread-slice"></i> Suave</span>
+                            <span><i class="fas fa-clock"></i> Recién Horneado</span>
+                            <span><i class="fas fa-star"></i> Clásico</span>
+                        </div>
+                        <div class="velar-card-footer">
+                            <span class="velar-status">DISPONIBLE HOY</span>
+                            <div class="velar-actions">
+                                <button class="velar-action-btn" title="Compartir" onclick="shareProduct('Pan Aliñado')"><i class="fas fa-share-alt"></i></button>
+                                <button class="velar-action-btn velar-fav-btn" title="Favorito"><i class="far fa-heart"></i></button>
+                                <a href="index.html#contacto" class="velar-action-btn" title="Pedir"><i class="fas fa-shopping-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roscón -->
+                <div class="velar-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="velar-card-img-wrap">
+                        <img src="assets/images/roscon.jpeg" alt="Roscón Tradicional">
+                        <span class="velar-card-badge">✦ FAVORITO</span>
+                        <span class="velar-card-price">$2.000</span>
+                    </div>
+                    <div class="velar-card-body">
+                        <h3 class="velar-card-title">Roscón Tradicional de Guayaba</h3>
+                        <p class="velar-card-sub">Corona esponjosa con dulce de guayaba y cubierta azucarada.</p>
+                        <div class="velar-specs">
+                            <span><i class="fas fa-stroopwafel"></i> Corona</span>
+                            <span><i class="fas fa-candy-cane"></i> Guayaba</span>
+                            <span><i class="fas fa-check-circle"></i> Delicioso</span>
+                        </div>
+                        <div class="velar-card-footer">
+                            <span class="velar-status">DISPONIBLE HOY</span>
+                            <div class="velar-actions">
+                                <button class="velar-action-btn" title="Compartir" onclick="shareProduct('Roscón Tradicional')"><i class="fas fa-share-alt"></i></button>
+                                <button class="velar-action-btn velar-fav-btn" title="Favorito"><i class="far fa-heart"></i></button>
+                                <a href="contacto.html" class="velar-action-btn" title="Pedir"><i class="fas fa-shopping-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mantecada Artesanal -->
+                <div class="velar-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="velar-card-img-wrap">
+                        <img src="assets/images/producto_1.jpg" alt="Mantecada Artesanal">
+                        <span class="velar-card-badge">✦ TRADICIÓN DORADA</span>
+                        <span class="velar-card-price">$4.500</span>
+                    </div>
+                    <div class="velar-card-body">
+                        <h3 class="velar-card-title">Mantecada Artesanal</h3>
+                        <p class="velar-card-sub">Mantecada tradicional horneada diariamente con mantequilla pura y miga esponjosa.</p>
+                        <div class="velar-specs">
+                            <span><i class="fas fa-bread-slice"></i> 1 Unidad</span>
+                            <span><i class="fas fa-fire-alt"></i> Horno Diario</span>
+                            <span><i class="fas fa-award"></i> Miga Suave</span>
+                        </div>
+                        <div class="velar-card-footer">
+                            <span class="velar-status">DISPONIBLE HOY</span>
+                            <div class="velar-actions">
+                                <button class="velar-action-btn" title="Compartir" onclick="shareProduct('Mantecada Artesanal')"><i class="fas fa-share-alt"></i></button>
+                                <button class="velar-action-btn velar-fav-btn" title="Favorito"><i class="far fa-heart"></i></button>
+                                <a href="contacto.html" class="velar-action-btn" title="Pedir"><i class="fas fa-shopping-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calado Artesanal -->
+                <div class="velar-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="velar-card-img-wrap">
+                        <img src="assets/images/pan_2.jpg" alt="Calado Artesanal">
+                        <span class="velar-card-badge">✦ CRUJAN</span>
+                        <span class="velar-card-price">$2.000</span>
+                    </div>
+                    <div class="velar-card-body">
+                        <h3 class="velar-card-title">Calado Artesanal</h3>
+                        <p class="velar-card-sub">Calado tostado crujiente con toque de queso seleccionado y mantequilla fresca.</p>
+                        <div class="velar-specs">
+                            <span><i class="fas fa-cookie"></i> Crujiente</span>
+                            <span><i class="fas fa-cheese"></i> Queso Puro</span>
+                            <span><i class="fas fa-coffee"></i> Ideal para Café</span>
+                        </div>
+                        <div class="velar-card-footer">
+                            <span class="velar-status">DISPONIBLE HOY</span>
+                            <div class="velar-actions">
+                                <button class="velar-action-btn" title="Compartir" onclick="shareProduct('Calado Artesanal')"><i class="fas fa-share-alt"></i></button>
+                                <button class="velar-action-btn velar-fav-btn" title="Favorito"><i class="far fa-heart"></i></button>
+                                <a href="contacto.html" class="velar-action-btn" title="Pedir"><i class="fas fa-shopping-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pan Lengua Dulce -->
+                <div class="velar-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="velar-card-img-wrap">
+                        <img src="assets/images/pan_3.jpg" alt="Pan Lengua Dulce">
+                        <span class="velar-card-badge">✦ HOJALDRE DULCE</span>
+                        <span class="velar-card-price">$2.000</span>
+                    </div>
+                    <div class="velar-card-body">
+                        <h3 class="velar-card-title">Pan Lengua Dulce</h3>
+                        <p class="velar-card-sub">Pan lengua hojaldrado crocante espolvoreado con fina capa de azúcar morena.</p>
+                        <div class="velar-specs">
+                            <span><i class="fas fa-stroopwafel"></i> Hojaldre</span>
+                            <span><i class="fas fa-candy-cane"></i> Azúcar Morena</span>
+                            <span><i class="fas fa-star"></i> Crocante</span>
+                        </div>
+                        <div class="velar-card-footer">
+                            <span class="velar-status">DISPONIBLE HOY</span>
+                            <div class="velar-actions">
+                                <button class="velar-action-btn" title="Compartir" onclick="shareProduct('Pan Lengua Dulce')"><i class="fas fa-share-alt"></i></button>
+                                <button class="velar-action-btn velar-fav-btn" title="Favorito"><i class="far fa-heart"></i></button>
+                                <a href="contacto.html" class="velar-action-btn" title="Pedir"><i class="fas fa-shopping-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pan Rollo Tradicional -->
+                <div class="velar-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="velar-card-img-wrap">
+                        <img src="assets/images/pan_4.jpg" alt="Pan Rollo Tradicional">
+                        <span class="velar-card-badge">✦ RECIÉN HORNEADO</span>
+                        <span class="velar-card-price">$2.000</span>
+                    </div>
+                    <div class="velar-card-body">
+                        <h3 class="velar-card-title">Pan Rollo Tradicional</h3>
+                        <p class="velar-card-sub">Miga suave y esponjosa con aroma inconfundible a suero de leche y mantequilla.</p>
+                        <div class="velar-specs">
+                            <span><i class="fas fa-bread-slice"></i> Miga Suave</span>
+                            <span><i class="fas fa-fire-alt"></i> Recién Hecho</span>
+                            <span><i class="fas fa-check"></i> Favorito</span>
+                        </div>
+                        <div class="velar-card-footer">
+                            <span class="velar-status">DISPONIBLE HOY</span>
+                            <div class="velar-actions">
+                                <button class="velar-action-btn" title="Compartir" onclick="shareProduct('Pan Rollo Tradicional')"><i class="fas fa-share-alt"></i></button>
+                                <button class="velar-action-btn velar-fav-btn" title="Favorito"><i class="far fa-heart"></i></button>
+                                <a href="contacto.html" class="velar-action-btn" title="Pedir"><i class="fas fa-shopping-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vitrina de Panes Frescos del Día -->
+                <div class="velar-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="velar-card-img-wrap">
+                        <img src="assets/images/WhatsApp Image 2026-04-28 at 17.24.37.jpeg" alt="Vitrina de Panes Frescos de la Casa">
+                        <span class="velar-card-badge">✦ HORNO EN VIVO</span>
+                        <span class="velar-card-price">Variedad diaria</span>
+                    </div>
+                    <div class="velar-card-body">
+                        <h3 class="velar-card-title">Vitrina de Panes Frescos del Día</h3>
+                        <p class="velar-card-sub">Horneado continuo durante toda la mañana: aliñados, roscones, mogollas y panes de queso.</p>
+                        <div class="velar-specs">
+                            <span><i class="fas fa-fire-alt"></i> Horno en Vivo</span>
+                            <span><i class="fas fa-clock"></i> Recién Salidos</span>
+                            <span><i class="fas fa-layer-group"></i> Surtido Completo</span>
+                        </div>
+                        <div class="velar-card-footer">
+                            <span class="velar-status">DISPONIBLE HOY</span>
+                            <div class="velar-actions">
+                                <button class="velar-action-btn" title="Compartir" onclick="shareProduct('Vitrina de Panes Frescos')"><i class="fas fa-share-alt"></i></button>
+                                <button class="velar-action-btn velar-fav-btn" title="Favorito"><i class="far fa-heart"></i></button>
+                                <a href="index.html#contacto" class="velar-action-btn" title="Pedir"><i class="fas fa-shopping-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pan de Queso -->
+                <div class="velar-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="velar-card-img-wrap">
+                        <img src="assets/images/pan_de_queso.jpg" alt="Pan de Queso Caliente">
+                        <span class="velar-card-badge">✦ RECOMENDADO</span>
+                        <span class="velar-card-price">$2.000</span>
+                    </div>
+                    <div class="velar-card-body">
+                        <h3 class="velar-card-title">Pan de Queso Caliente</h3>
+                        <p class="velar-card-sub">Corteza dorada con generoso queso campesino fundido por dentro.</p>
+                        <div class="velar-specs">
+                            <span><i class="fas fa-cheese"></i> Queso Doble Crema</span>
+                            <span><i class="fas fa-temperature-high"></i> Calientito</span>
+                            <span><i class="fas fa-smile"></i> Irresistible</span>
+                        </div>
+                        <div class="velar-card-footer">
+                            <span class="velar-status">DISPONIBLE HOY</span>
+                            <div class="velar-actions">
+                                <button class="velar-action-btn" title="Compartir" onclick="shareProduct('Pan de Queso')"><i class="fas fa-share-alt"></i></button>
+                                <button class="velar-action-btn velar-fav-btn" title="Favorito"><i class="far fa-heart"></i></button>
+                                <a href="index.html#contacto" class="velar-action-btn" title="Pedir"><i class="fas fa-shopping-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mogolla Mexicana -->
+                <div class="velar-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="velar-card-img-wrap">
+                        <img src="assets/images/mogolla_mexicana.jpg" alt="Mogolla Mexicana">
+                        <span class="velar-card-badge">✦ ESPECIALIDAD</span>
+                        <span class="velar-card-price">$5.000</span>
+                    </div>
+                    <div class="velar-card-body">
+                        <h3 class="velar-card-title">Mogolla Mexicana</h3>
+                        <p class="velar-card-sub">Pan tradicional con textura crujiente y toques dulces artesanales.</p>
+                        <div class="velar-specs">
+                            <span><i class="fas fa-bread-slice"></i> Textura Única</span>
+                            <span><i class="fas fa-cookie"></i> Aromatizada</span>
+                            <span><i class="fas fa-award"></i> Selecta</span>
+                        </div>
+                        <div class="velar-card-footer">
+                            <span class="velar-status">DISPONIBLE HOY</span>
+                            <div class="velar-actions">
+                                <button class="velar-action-btn" title="Compartir" onclick="shareProduct('Mogolla Mexicana')"><i class="fas fa-share-alt"></i></button>
+                                <button class="velar-action-btn velar-fav-btn" title="Favorito"><i class="far fa-heart"></i></button>
+                                <a href="index.html#contacto" class="velar-action-btn" title="Pedir"><i class="fas fa-shopping-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mogolla Tropical -->
+                <div class="velar-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="velar-card-img-wrap">
+                        <img src="assets/images/mogolla_tropical.jpg" alt="Mogolla Tropical">
+                        <span class="velar-card-badge">✦ NOVEDAD</span>
+                        <span class="velar-card-price">$400</span>
+                    </div>
+                    <div class="velar-card-body">
+                        <h3 class="velar-card-title">Mogolla Tropical</h3>
+                        <p class="velar-card-sub">Combinación de sabores tropicales con la receta clásica campesina.</p>
+                        <div class="velar-specs">
+                            <span><i class="fas fa-sun"></i> Tropical</span>
+                            <span><i class="fas fa-lemon"></i> Notas Frutales</span>
+                            <span><i class="fas fa-thumbs-up"></i> Original</span>
+                        </div>
+                        <div class="velar-card-footer">
+                            <span class="velar-status">DISPONIBLE HOY</span>
+                            <div class="velar-actions">
+                                <button class="velar-action-btn" title="Compartir" onclick="shareProduct('Mogolla Tropical')"><i class="fas fa-share-alt"></i></button>
+                                <button class="velar-action-btn velar-fav-btn" title="Favorito"><i class="far fa-heart"></i></button>
+                                <a href="index.html#contacto" class="velar-action-btn" title="Pedir"><i class="fas fa-shopping-bag"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer footer-extended">
+        <div class="container footer-grid">
+            <div class="footer-brand-block">
+                <h3 class="footer-title">Dulce Tentación</h3>
+                <p>La mejor experiencia culinaria en Tocaima, Cundinamarca.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/dulcetentacion1413" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/dulcetentacion1413" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/573105731569" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <div class="footer-contact-list">
+                    <div class="footer-contact-item"><i class="fas fa-location-dot"></i><span>Urbanización San Jacinto, Diagonal 2B #5-45, Tocaima, Cundinamarca, Colombia</span></div>
+                    <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+57 310 573 1569</span></div>
+                    <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Horario de atención: Lunes a Domingo de 6:00 am a 9:00 pm</span></div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Horarios</h3>
+                <div class="footer-hours">
+                    <p>Lunes - Sábado: 3:30 PM - 11:00 PM</p>
+                    <p>Domingo: 4:00 PM - 11:30 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"><div class="container"><p>&copy; 2026 Dulce Tentación. Todos los derechos reservados.</p></div></div>
+    </footer>
+
+    <!-- AOS & GSAP -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <div id="cartOverlay" class="cart-overlay" aria-hidden="true"></div>
+    <aside id="cartSidebar" class="cart-sidebar" aria-label="Carrito de compras" aria-hidden="true"><div class="cart-header"><div><span class="cart-eyebrow">Tu selección</span><h2><i class="fas fa-shopping-basket"></i> Mi carrito</h2></div><button type="button" id="closeCart" class="close-cart" aria-label="Cerrar carrito">&times;</button></div><div id="listaCarrito" class="cart-items" aria-live="polite"></div><div class="cart-footer"><div class="cart-total-products"><span>Productos</span><strong id="cartTotalItems">0</strong></div><div class="cart-total-row"><span>Total</span><span id="cartTotalValue">$0</span></div><button type="button" class="cart-continue-btn" onclick="closeCartSidebar()">Seguir Comprando</button><button type="button" class="checkout-btn" onclick="pagar()" disabled><i class="fab fa-whatsapp"></i> Pedir por WhatsApp</button></div></aside>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>

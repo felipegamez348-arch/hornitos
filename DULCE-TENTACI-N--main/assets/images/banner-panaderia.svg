@@ -1,0 +1,43 @@
+﻿<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgPan" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F0E7"/>
+      <stop offset="1" stop-color="#E9D0A7"/>
+    </linearGradient>
+    <linearGradient id="accentPan" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#CC8C44"/>
+      <stop offset="1" stop-color="#A95F2C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bgPan)"/>
+  <circle cx="1000" cy="110" r="180" fill="#F0D3A1" opacity="0.7"/>
+  <circle cx="150" cy="630" r="240" fill="#E4BA74" opacity="0.28"/>
+
+  <g transform="translate(760 150)">
+    <rect x="0" y="110" width="170" height="130" rx="22" fill="#F3E4C6"/>
+    <path d="M16 120H152C163 120 171 127 171 138V186C171 223 140 252 102 252H68C30 252 0 223 0 186V138C0 127 8 120 16 120Z" fill="#E8C783"/>
+    <path d="M24 146H144C149 146 154 151 154 156V174C154 204 130 228 100 228H68C38 228 14 204 14 174V156C14 151 19 146 24 146Z" fill="#F4E5BE"/>
+    <path d="M50 94C50 75 66 60 85 60H115C134 60 150 75 150 94V124H50V94Z" fill="#D19B56"/>
+    <path d="M54 100H146" stroke="#A5602D" stroke-width="6" stroke-linecap="round"/>
+    <path d="M58 120H142" stroke="#A5602D" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(120 180)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="84" font-weight="700" fill="#2C2018">PANES</text>
+    <text x="0" y="72" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="8" fill="#A75F2D">ARTESANALES</text>
+    <rect x="0" y="98" width="180" height="8" rx="4" fill="url(#accentPan)"/>
+    <text x="0" y="170" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#5C4331">Pan casero y croissants recién horneados,</text>
+    <text x="0" y="210" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#5C4331">con textura suave y sabor tradicional.</text>
+    <g transform="translate(0 250)">
+      <rect width="220" height="58" rx="29" fill="url(#accentPan)"/>
+      <text x="110" y="36" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">Ver panes</text>
+    </g>
+  </g>
+
+  <g transform="translate(120 480)">
+    <path d="M20 80C60 20 120 14 180 80" stroke="#C68A42" stroke-width="8" stroke-linecap="round"/>
+    <path d="M65 80C95 40 150 38 185 85" stroke="#C68A42" stroke-width="8" stroke-linecap="round"/>
+    <path d="M40 70L60 30L78 70" stroke="#C68A42" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M125 70L144 30L162 70" stroke="#C68A42" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

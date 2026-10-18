@@ -1,0 +1,1 @@
+const fs = require('fs'); const mode = process.argv[2]; const dest = process.argv[3]; const chunk = Buffer.from(process.argv[4], 'base64'); if (mode === 'start') { fs.writeFileSync(dest, chunk); } else { fs.appendFileSync(dest, chunk); } console.log(dest, fs.statSync(dest).size);

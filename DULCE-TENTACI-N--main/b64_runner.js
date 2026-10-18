@@ -1,0 +1,1 @@
+const fs = require('fs'); const b64 = process.argv[2]; const dest = process.argv[3]; fs.writeFileSync(dest, Buffer.from(b64, 'base64')); console.log('Wrote', dest, fs.statSync(dest).size);

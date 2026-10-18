@@ -1,0 +1,29 @@
+<svg width="720" height="260" viewBox="0 0 720 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ringGlow" x1="30" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7EB"/>
+      <stop offset="0.45" stop-color="#E7CC98"/>
+      <stop offset="1" stop-color="#C77D2A"/>
+    </linearGradient>
+    <linearGradient id="innerBg" x1="40" y1="30" x2="180" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF9"/>
+      <stop offset="1" stop-color="#F3E4C9"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(18 20)">
+    <circle cx="100" cy="100" r="88" fill="url(#innerBg)" stroke="url(#ringGlow)" stroke-width="11"/>
+    <circle cx="100" cy="100" r="75" stroke="#D8B77C" stroke-width="2" opacity="0.65"/>
+
+    <path d="M64 69C69 56 82 48 96 48H112C136 48 152 63.6 152 81C152 96.2 143.6 106.8 129 112.7L146.5 140.5H129.5L114.5 114.5H99.5V140.5H81V69H64ZM97 64V100H107C122 100 129 92 129 81C129 70 122 64 107 64H97Z" fill="#2D1F1A"/>
+    <path d="M71 170C82 153 94 145 112 145C129 145 142 153 152 170" stroke="#D39A45" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="72" cy="72" r="4" fill="#D68C29"/>
+    <circle cx="126" cy="66" r="4" fill="#C65A47"/>
+  </g>
+
+  <g transform="translate(220 60)">
+    <text x="0" y="52" fill="#8B5E27" font-size="62" font-weight="700" font-family="Georgia, 'Times New Roman', serif" letter-spacing="2">DULCE</text>
+    <line x1="6" y1="78" x2="280" y2="78" stroke="#C98B3D" stroke-width="2" opacity="0.8"/>
+    <text x="8" y="116" fill="#A4651A" font-size="22" font-weight="600" font-family="Verdana, Arial, sans-serif" letter-spacing="8">ARTESANAL</text>
+  </g>
+</svg>
